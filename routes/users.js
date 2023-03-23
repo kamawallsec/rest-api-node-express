@@ -41,4 +41,17 @@ router.post('/', (req, res)=> {
 
 });
 
+router.get('/:id', (req, res)=> {
+
+    const {id} = req.params;
+
+    const findUser = users.find(user => user.id === id);
+
+
+    // res.send('Id route!');
+    res.send(findUser);
+
+} );
+
+
 export default router;

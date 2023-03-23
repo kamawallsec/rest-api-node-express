@@ -1,4 +1,5 @@
 import express from 'express';
+import { v4 as uuidv4 } from 'uuid';
 
 const router = express.Router();
 
@@ -23,6 +24,21 @@ router.get('/', (req, res)=> {
 
     res.send('Welcome user!');
 
-})
+});
+
+
+router.post('/', (req, res)=> {
+
+    // console.log('Post route ready');
+
+    const user = req.body;
+
+    const userId = uuidv4();   
+    const userWithId = { ...user, id: userId };
+    users.push(userWithId);
+
+    res.send(`User named ${user.firstName} has been added to the list of users`);
+
+});
 
 export default router;

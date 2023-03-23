@@ -64,4 +64,28 @@ router.delete('/:id', (req, res)=> {
 
 });
 
+
+router.patch('/:id', (req, res)=> {
+
+    const {id} = req.params;
+    const {firstName, lastName, age} = req.body;  // what can i change | frontend
+
+    const userUpdate = users.find((user)=> user.id === id );
+
+    if (firstName) {
+        userUpdate.firstName;
+    }
+
+    if (lastName) {
+        userUpdate.lastName;
+    }
+
+    if (age) {
+        userUpdate.age;
+    }
+
+    res.send(`User with the id ${id} has been updated 🥳`);
+
+});
+
 export default router;

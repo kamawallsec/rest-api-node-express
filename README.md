@@ -24,9 +24,9 @@ Refer to each documentation to learn more:
 
 [Node.js Docs](https://nodejs.org/en/docs).
 
-[Express.js](https://expressjs.com/en/starter/installing.html).
+[Express.js Docs](https://expressjs.com/en/starter/installing.html).
 
-[uuid](https://www.npmjs.com/package/uuid).
+[uuid Docs](https://www.npmjs.com/package/uuid).
 ## Badges
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=plastic&logo=node.js&logoColor=white)

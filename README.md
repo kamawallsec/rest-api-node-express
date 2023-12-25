@@ -76,5 +76,4 @@ Start the server
 
 ## Feedback
 
-If you have any feedback, please reach out to me at *****kamil.ismayilzade.2016@gmail.com*****
 
